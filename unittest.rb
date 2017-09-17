@@ -64,9 +64,9 @@ describe 'database' do
       "select",
       ".exit",
     ]
-    result - run_script(script)
+    result = run_script(script)
     expect(result).to eq([
-                           "db > String is too long",
+                           "db > String is too long.",
                            "db > Executed.",
                            "db > ",
                          ])
